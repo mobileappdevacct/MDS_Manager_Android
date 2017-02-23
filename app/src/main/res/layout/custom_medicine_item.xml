@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:padding="@dimen/dim_5">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dim_5"
+        android:paddingTop="@dimen/dim_5"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/drugNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+
+        <TextView
+            android:id="@+id/genericNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+
+        <TextView
+            android:id="@+id/dosageTxt"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_arrow_medicalhistory" />
+       <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/btn_delete"
+
+            android:padding="@dimen/dim_10"
+            />
+    </LinearLayout>
+
+</LinearLayout>

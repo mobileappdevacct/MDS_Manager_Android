@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dim_10"
+        android:paddingTop="@dimen/dim_10"
+        android:weightSum="1"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_weight=".48"
+            android:text="Blood Type *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_14" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_weight=".52"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/bloodGroupTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/dim_4"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_16"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/bloodTypeBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_35"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:padding="@dimen/dim_5"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_16" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Date *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/DateBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:padding="@dimen/dim_5"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/diagnosisTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Type"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+
+        <Spinner
+            android:id="@+id/diagnosisSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_40"
+            android:layout_alignBottom="@+id/addSymptomBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/addSymptomBtn"
+            android:layout_weight=".5"
+            android:layout_toLeftOf="@+id/addSymptomBtn"
+            android:background="@drawable/symptom_spinner_bg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Unit"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/unitEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/dim_5"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater"
+        />
+
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_100"
+        android:layout_marginRight="@dimen/dim_100"
+        android:layout_marginTop="@dimen/dim_15"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:padding="@dimen/dim_5"
+
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

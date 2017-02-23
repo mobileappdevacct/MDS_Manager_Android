@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/tool_bar"
+                layout="@layout/tool_bar"></include>
+            <LinearLayout
+                android:id="@+id/medicineLinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tool_bar"
+                android:background="@color/black_light"
+                android:padding="@dimen/dim_5"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Drug Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Dosage"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Days"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/treatmentLinearlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tool_bar"
+
+                android:background="@color/black_light"
+                android:padding="@dimen/dim_5"
+                android:visibility="gone"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Drug Name"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Dosage"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Days"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/treatmentListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+            <ListView
+                android:id="@+id/medicineListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/addtrramentBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@mipmap/btn_add_diagnosis"
+                android:padding="@dimen/dim_5"
+
+                android:text="Add Treatment"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@mipmap/img_seperater" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dim_10"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Start Date *"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim_16" />
+
+                <Button
+                    android:id="@+id/startDateBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_35"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:padding="@dimen/dim_5"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@mipmap/img_seperater" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/dim_10"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="End Date"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim_16" />
+
+                <Button
+                    android:id="@+id/endDateBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dim_35"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:padding="@dimen/dim_5"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@mipmap/img_seperater" />
+
+
+
+
+
+            <Button
+                android:id="@+id/savemedicineBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@mipmap/btn_add_diagnosis"
+                android:padding="@dimen/dim_5"
+
+                android:text="Save Medicine"
+
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dim_10"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Treatment"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim_16" />
+
+                <EditText
+                    android:id="@+id/treatmentEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim_80"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_bg_symtoms"
+
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/dim_5"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dim_10"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:text="Notes"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/dim_16" />
+
+                <EditText
+                    android:id="@+id/notesEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dim_80"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:gravity="start"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:imeOptions="actionDone"
+                    android:padding="@dimen/dim_5"
+
+                    android:textColor="@color/gray_text" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_100"
+                android:layout_marginRight="@dimen/dim_100"
+                android:layout_marginTop="@dimen/dim_15"
+                android:background="@mipmap/btn_add_diagnosis"
+                android:padding="@dimen/dim_5"
+
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/showBottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#cfcfcf"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mdsTreatmentTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40"
+            android:gravity="center"
+            android:text="MDS Treatment"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_25" />
+        <TextView
+            android:id="@+id/clinicalTrialsTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40"
+            android:gravity="center"
+            android:text="Clinical Trial"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_25" />
+        <TextView
+            android:id="@+id/othersTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_40"
+            android:layout_marginBottom="@dimen/dim_10"
+            android:gravity="center"
+            android:text="Other"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_25" />
+    </LinearLayout>
+</RelativeLayout>

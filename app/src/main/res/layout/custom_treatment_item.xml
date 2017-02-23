@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dim_5"
+      >
+        <TextView
+            android:id="@+id/treatmentTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dim_5"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+        <ImageView
+            android:id="@+id/notesImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:src="@mipmap/icn_note" />
+        <TextView
+            android:id="@+id/resultValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dim_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_arrow_medicalhistory" />
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/btn_delete"
+
+            android:padding="@dimen/dim_10"
+            />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Trial Number"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/trialnuberEdt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dim_5"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Name of Trial *"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/nameofTrialEdt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dim_5"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Location"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/locationEdt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/dim_5"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dim_30"
+            android:background="@mipmap/btn_add_diagnosis"
+            android:padding="@dimen/dim_5"
+             android:gravity="center"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

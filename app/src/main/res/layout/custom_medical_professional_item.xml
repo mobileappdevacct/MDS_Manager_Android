@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="@dimen/dim_10">
+
+    <ImageView
+        android:id="@+id/arrowImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/delete_btn"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/img_arrow_medicalhistory" />
+    <ImageView
+        android:id="@+id/delete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/btn_delete"
+
+        android:padding="@dimen/dim_10"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/arrowImg"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_weight=".6"
+
+
+                android:gravity="left|center_vertical"
+                android:text="Name"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+
+
+                android:gravity="left"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_weight=".6"
+
+
+                android:gravity="left|center_vertical"
+                android:text="Speciality"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:id="@+id/specialityTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+
+
+                android:gravity="left"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+                android:layout_weight=".6"
+
+
+                android:gravity="left|center_vertical"
+                android:text="Phone"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <TextView
+                android:id="@+id/phoneTxt"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_centerVertical="true"
+
+                android:layout_weight="1.4"
+                android:gravity="left"
+                android:inputType="phone"
+                android:textColor="@color/blue_purple"
+                android:textSize="@dimen/dim_16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

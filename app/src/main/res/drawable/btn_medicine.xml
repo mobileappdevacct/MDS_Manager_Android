@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/icn_medicine_normaltouch_" android:state_pressed="true" />
+    <!-- focused -->
+    <item android:drawable="@mipmap/icn_medicine_normal" android:state_focused="true" />
+    <!-- default -->
+    <item android:drawable="@mipmap/icn_medicine_normal" />
+</selector>

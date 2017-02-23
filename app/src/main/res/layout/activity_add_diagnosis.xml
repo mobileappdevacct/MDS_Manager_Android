@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/diagnosisTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Topic *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/diagnosisEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dim_5"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            />
+        <Spinner
+            android:id="@+id/diagnosisSpinner"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_45"
+            android:layout_alignBottom="@+id/addSymptomBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/addSymptomBtn"
+            android:layout_weight=".5"
+            android:layout_toLeftOf="@+id/addSymptomBtn"
+            android:background="@drawable/symptom_spinner_bg" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Date *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/DateBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:padding="@dimen/dim_5"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@mipmap/img_seperater" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Notes"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/notesEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_80"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:inputType="textMultiLine|textCapSentences"
+            android:gravity="start"
+            android:padding="@dimen/dim_5"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addProviderLl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Managing Provider"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <Button
+                android:id="@+id/managingProviderBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:padding="@dimen/dim_5"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Drug Name"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/addProviderBtn"
+                android:layout_width="0dp"
+
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@color/brown_theme"
+                android:padding="@dimen/dim_5"
+                android:text="Add Provider"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_100"
+        android:layout_marginRight="@dimen/dim_100"
+        android:layout_marginTop="@dimen/dim_15"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:padding="@dimen/dim_5"
+
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>

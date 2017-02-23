@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:padding="@dimen/dim_5">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="@dimen/dim_5"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dim_16" />
+
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:visibility="gone"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/startTimeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dim_10"
+            android:text="Start Time"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dim_10"
+            android:src="@mipmap/icn_arrow" />
+    </LinearLayout>
+</RelativeLayout>

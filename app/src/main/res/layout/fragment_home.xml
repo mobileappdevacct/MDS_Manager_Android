@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/menuSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_25"
+        android:background="@drawable/spinner_shape"
+        android:singleLine="true"
+        android:spinnerMode="dropdown"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_40"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@drawable/rounded_bg_search"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="@dimen/dim_10"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/dim_10"
+        android:singleLine="true"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/dim_18" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_120"
+        android:layout_marginLeft="@dimen/dim_5"
+        android:layout_marginRight="@dimen/dim_5"
+        android:layout_marginTop="@dimen/dim_10"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+
+        <TextView
+            android:id="@+id/symptomTrackerTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dim_2"
+            android:drawableTop="@drawable/btn_symptom_tracker"
+            android:gravity="center"
+            android:text="Symptom Tracker"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_12" />
+
+        <TextView
+            android:id="@+id/medicineTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawablePadding="@dimen/dim_2"
+            android:drawableTop="@drawable/btn_medicine"
+            android:gravity="center"
+            android:text="Medicine"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_12" />
+
+        <TextView
+            android:id="@+id/calenderTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawablePadding="@dimen/dim_2"
+            android:drawableTop="@drawable/btn_calender"
+            android:gravity="center"
+            android:text="Calendar"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_12" />
+
+        <TextView
+            android:id="@+id/notesTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/dim_2"
+
+            android:drawableTop="@drawable/btn_nts"
+            android:gravity="center"
+            android:text="Notes"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_12" />
+
+        <TextView
+            android:id="@+id/profileTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:drawablePadding="@dimen/dim_2"
+            android:drawableTop="@mipmap/btn_profile"
+            android:gravity="center"
+            android:text="Personal Profile"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_12" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_10">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_10"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/insuranceTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_home"
+                android:drawableLeft="@mipmap/icn_insurance"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_arrow"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:text="Insurance"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18"
+               />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/treatmentTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_home"
+                android:drawableLeft="@mipmap/icn_treatment"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_expand"
+                android:gravity="center_vertical"
+                android:text="MDS Profile"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater" />
+            <LinearLayout
+                android:id="@+id/treatmentContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+                <TextView
+                    android:id="@+id/initialLabResultTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Initial Lab Results"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18"
+                    />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater" />
+
+                <TextView
+                    android:id="@+id/boneMarrowTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Bone Marrow Results"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater" />
+
+                <TextView
+                    android:id="@+id/bloodCountTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Blood Counts"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater" />
+
+                <TextView
+                    android:id="@+id/treatmentsInnerTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Treatments"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater" />
+                <TextView
+                    android:id="@+id/transfusionssTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Transfusions"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater" />
+                <TextView
+                    android:id="@+id/ongoingLabResultsTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="Ongoing Lab Results"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:visibility="gone"
+                    android:background="@mipmap/img_seperater" />
+                <TextView
+                    android:id="@+id/ipss_r_score_Txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_20"
+                    android:layout_marginTop="@dimen/dim_15"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_bg_home"
+                    android:drawablePadding="@dimen/dim_15"
+                    android:drawableRight="@mipmap/icn_arrow"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dim_5"
+                    android:text="IPSS-R Score"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/dim_18" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim_30"
+                    android:background="@mipmap/img_seperater"
+                   />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/medicalProfTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_home"
+
+
+                android:drawableLeft="@mipmap/icn_medical"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_arrow"
+                android:gravity="center_vertical"
+                android:text="Medical Professionals"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater" />
+
+
+
+
+
+            <TextView
+                android:id="@+id/transfusionsTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_15"
+                android:layout_weight="1"
+
+                android:background="@drawable/btn_bg_home"
+
+                android:drawableLeft="@mipmap/icn_transfusions"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_arrow"
+                android:gravity="center_vertical"
+                android:text="Transfusions"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater"
+                android:visibility="gone" />
+
+             <TextView
+                android:id="@+id/clinicalTrialsTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/dim_5"
+                android:layout_weight="1"
+
+                android:background="@drawable/btn_bg_home"
+                android:drawableLeft="@mipmap/icn_clinical"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_arrow"
+                android:gravity="center_vertical"
+                android:text="Clinical Trials"
+
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater" />
+
+            <TextView
+                android:id="@+id/additionalResourcesTxt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_5"
+
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_home"
+
+                android:drawableLeft="@mipmap/icn_additional"
+                android:drawablePadding="@dimen/dim_15"
+                android:drawableRight="@mipmap/icn_arrow"
+                android:gravity="center_vertical"
+                android:text="Additional Resources"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_18" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_50"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@mipmap/img_seperater" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

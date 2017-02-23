@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/icn_calendar_touch" android:state_pressed="true" />
+    <!-- focused -->
+    <item android:drawable="@mipmap/icn_calendar_normal" android:state_focused="true" />
+    <!-- default -->
+    <item android:drawable="@mipmap/icn_calendar_normal" />
+</selector>

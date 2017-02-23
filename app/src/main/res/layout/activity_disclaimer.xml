@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_50"
+        android:background="@color/brown_theme"
+        android:elevation="@dimen/dim_4"
+        android:gravity="center"
+        android:text="Healthcare Disclaimer"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_20"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">></TextView>
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:layout_margin="@dimen/dim_10"></WebView>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_10"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/acceptBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:background="@color/brown_theme"
+
+
+            android:text="Accept"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_15" />
+        <Button
+            android:id="@+id/rejctBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/brown_theme"
+            android:padding="@dimen/dim_5"
+            android:layout_marginTop="@dimen/dim_2"
+            android:text="Decline &amp; Close App"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_15" />
+
+
+    </LinearLayout>
+</RelativeLayout>

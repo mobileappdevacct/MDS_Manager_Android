@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <TextView
+        android:id="@+id/tilte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="@dimen/dim_13"
+        android:text="Current Medicine"
+        android:textColor="@color/brown_theme"
+        android:textSize="@dimen/dim_18" />
+
+    <RelativeLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilte"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/prescriptionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_30"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_prescription_touch"
+            android:text="Prescription"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_8" />
+
+        <Button
+            android:id="@+id/overTheCounterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_30"
+            android:layout_marginLeft="-20dp"
+            android:layout_toLeftOf="@+id/supplementsBtn"
+
+            android:layout_toRightOf="@+id/prescriptionBtn"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_prescription_normal"
+            android:text="Over-the-counter"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_8" />
+
+        <Button
+            android:id="@+id/supplementsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim_30"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-20dp"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_prescription_normal"
+            android:text="Supplements/Other"
+
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_8" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/title_name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layout"
+        android:background="@color/black_light"
+        android:padding="@dimen/dim_5"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:autoLink="all"
+            android:gravity="center"
+            android:text="Drug Name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:text="Generic Name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim_13"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:text="Dosage"
+
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="@dimen/dim_10"
+            android:src="@mipmap/btn_delete"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/medicineListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addMedicationBtn"
+        android:layout_below="@+id/title_name_layout"
+        android:layout_marginBottom="@dimen/dim_5" />
+
+    <Button
+
+        android:id="@+id/addMedicationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_10"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:text="Add Medication"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dim_16" />
+
+
+</RelativeLayout>

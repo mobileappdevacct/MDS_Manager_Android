@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+  >
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_350"
+        android:layout_centerInParent="true"
+
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+
+        android:background="@drawable/rounded_bg_add_symtoms">
+
+        <TextView
+            android:id="@+id/symtomsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_60"
+            android:text="We have detected conflicting data on the server from another device. Would you like to download the latest data from the server? Or use the data from this device and overwrite what is on the server?"
+            android:textColor="@color/red"
+            android:padding="@dimen/dim_10"
+            android:textSize="@dimen/dim_18" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/symtomsText"
+            android:layout_marginBottom="@dimen/dim_20">
+            <Button
+                android:id="@+id/downloadlatestfromserverBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_65"
+                android:layout_below="@+id/enterValueEdt"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_20"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_add_image"
+                android:padding="@dimen/dim_10"
+                android:text="Download Latest From Server"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_13" />
+            <Button
+                android:id="@+id/uselocaldataoverwriteBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_65"
+                android:layout_below="@+id/enterValueEdt"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20"
+                android:layout_marginTop="@dimen/dim_10"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_add_image"
+                android:padding="@dimen/dim_10"
+                android:text="Use Local Data and Overwrite Server"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_13" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="@dimen/dim_40"
+        android:layout_height="@dimen/dim_40"
+        android:layout_alignRight="@+id/container"
+        android:layout_alignTop="@+id/container"
+        android:layout_margin="@dimen/dim_5"
+        android:background="@color/red"
+        android:text="X"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_25" />
+</RelativeLayout>

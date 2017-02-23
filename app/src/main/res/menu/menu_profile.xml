@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mymdstracker.activities.ProfileActivity">
+
+
+        <item android:id="@+id/saveMenu"
+            android:icon="@mipmap/icn_edit_aboutlabel"
+            app:showAsAction="always"
+             />
+
+
+</menu>

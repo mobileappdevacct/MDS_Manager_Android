@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dim_130"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_130"
+        android:background="@drawable/rounded_bg_add_symtoms">
+
+        <TextView
+            android:id="@+id/symtomsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dim_60"
+            android:text="Add"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dim_28" />
+
+        <EditText
+            android:id="@+id/enterValueEdt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/symtomsText"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:layout_marginTop="@dimen/dim_30"
+            android:hint="Enter Value"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/dim_10"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_18" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterValueEdt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dim_30"
+            android:layout_marginLeft="@dimen/dim_20"
+            android:layout_marginRight="@dimen/dim_20"
+            android:layout_marginTop="@dimen/dim_30"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_add_image"
+            android:padding="@dimen/dim_10"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_18" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="@dimen/dim_40"
+        android:layout_height="@dimen/dim_40"
+        android:layout_alignRight="@+id/container"
+        android:layout_alignTop="@+id/container"
+        android:layout_margin="@dimen/dim_5"
+        android:background="@color/red"
+        android:text="X"
+        android:textColor="#fff"
+        android:textSize="@dimen/dim_25" />
+</RelativeLayout>

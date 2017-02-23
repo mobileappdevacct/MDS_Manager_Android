@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brown_theme">
+        <TextView
+            android:id="@+id/appointmentsBackTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_15"
+            android:drawableLeft="@mipmap/btn_back"
+            android:drawablePadding="@dimen/dim_15"
+            android:text="APPOINTMENTS"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_20" />
+        <ImageButton
+            android:id="@+id/addAppointmentsImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim_5"
+            android:background="@null"
+            android:padding="@dimen/dim_15"
+            android:src="@mipmap/icn_add_event" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/previous_month"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/previous_month_placeholder" />
+        <TextView
+            android:id="@+id/next_month"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/next_month"
+            android:layout_toRightOf="@id/next_month"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/next_month_placeholder" />
+        <TextView
+            android:id="@+id/current_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@id/previous_month"
+            android:layout_toLeftOf="@id/next_month"
+            android:layout_toRightOf="@id/previous_month"
+            android:layout_toStartOf="@id/next_month"
+            android:gravity="center"
+            android:text="@string/current_month_placeholder"
+            android:textColor="@color/blue_purple"
+            android:textSize="@dimen/dim_18" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/calendar_days_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_header"
+        android:background="@color/black_light"
+        android:horizontalSpacing="1dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth" />
+
+    <ViewSwitcher
+        android:id="@+id/calendar_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calendar_days_grid"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent">
+
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:horizontalSpacing="@dimen/dim_2"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/dim_2" />
+    </ViewSwitcher>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="@dimen/dim_5">
+
+        <TextView
+            android:id="@+id/listAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="List All"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:id="@+id/currentDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_16" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/appointmentsListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="@dimen/dim_5"
+       />
+</LinearLayout>

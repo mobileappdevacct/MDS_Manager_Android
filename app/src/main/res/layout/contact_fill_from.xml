@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_margin="@dimen/dim_20">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please fill out all fields if possible"
+                android:textColor="#000000"
+                android:textSize="@dimen/dim_15"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_40"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:hint="Name *"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="@dimen/dim_10"
+                android:singleLine="true"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_40"
+                android:layout_marginTop="@dimen/dim_15"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:hint="Phone"
+                android:imeOptions="actionNext"
+                android:maxLength="12"
+                android:padding="@dimen/dim_10"
+                android:singleLine="true"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/email_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_40"
+
+                android:layout_marginTop="@dimen/dim_15"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:hint="Email *"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dim_10"
+                android:singleLine="true"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/commentEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_70"
+                android:layout_marginTop="@dimen/dim_15"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:hint="Comment"
+                android:inputType="textMultiLine|textCapSentences"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/dim_10"
+                android:gravity="start"
+                android:textSize="@dimen/dim_16" />
+
+
+            <TextView
+                android:layout_width="@dimen/dim_280"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10"
+                android:text="I am a"
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_280"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <CheckBox
+                    android:id="@+id/patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Patient"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dim_16" />
+
+                <CheckBox
+                    android:id="@+id/family"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/dim_5"
+                    android:text="Family     "
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dim_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dim_280"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim_10">
+
+                <CheckBox
+                    android:id="@+id/friend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/dim_5"
+                    android:text="Friend"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dim_16" />
+
+                <CheckBox
+                    android:id="@+id/caregiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/dim_5"
+                    android:text="Caregiver"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/dim_16" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_45"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_20"
+                android:background="@mipmap/btn_add_diagnosis"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/dim_20" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

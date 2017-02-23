@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/boneMarrow_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_light"
+            android:padding="@dimen/dim_5"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3.2"
+                android:gravity="center"
+                android:text="Topic"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_13" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3.2"
+                android:gravity="center"
+
+                android:text="Date"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_13" />
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="3.2"
+                android:gravity="center"
+
+                android:text="Notes"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_13" />
+
+            <ImageView
+                android:id="@+id/delete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@mipmap/btn_delete"
+                android:visibility="invisible"
+                android:paddingLeft="@dimen/dim_10"
+                android:paddingRight="@dimen/dim_10"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addResultsBtn"
+        android:layout_below="@+id/topContainer" />
+
+
+    <Button
+        android:id="@+id/addResultsBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_15"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:padding="@dimen/dim_5"
+        android:text="Add Notes"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

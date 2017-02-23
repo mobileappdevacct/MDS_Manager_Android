@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_above="@+id/addSymtomBtn">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dim_10">
+
+            <ImageButton
+                android:id="@+id/listImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@mipmap/btn_list_touch" />
+
+            <ImageButton
+                android:id="@+id/chartImgBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@mipmap/btn_chart_normal"
+
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_light">
+
+            <LinearLayout
+                android:id="@+id/listContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dim_32"
+                android:padding="@dimen/dim_10"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:text="Date"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_14" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Symptom"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_14" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Severity"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_14" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/symtomListView"
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+
+       <!-- <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:overScrollMode="always"
+            android:visibility="gone"
+            />-->
+        <Spinner
+            android:id="@+id/typetransfusionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_30"
+            android:background="@mipmap/btn_add_diagnosis"
+            android:layout_marginTop="@dimen/dim_5"
+            android:layout_marginLeft="@dimen/dim_10"
+            android:layout_marginRight="@dimen/dim_10"
+            android:visibility="gone"></Spinner>
+          <LinearLayout
+              android:id="@+id/graph"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:visibility="gone"
+              android:padding="@dimen/dim_10"
+
+              ></LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addSymtomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@mipmap/btn_show_chart"
+        android:padding="@dimen/dim_10"
+        android:text="Add Symptom"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dim_14"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dim_10"/>
+</RelativeLayout>

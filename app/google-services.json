@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "647069792217",
+    "project_id": "firebase-mdsmanager"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647069792217:android:27b955f0101ed345",
+        "android_client_info": {
+          "package_name": "com.mymdsmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaXtBvdF1_iOn46eu3A_afCHimeXWGjm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

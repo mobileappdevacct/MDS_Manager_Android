@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Date &amp; Time *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/dateAndTimeBtn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_35"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_text" />
+
+    <LinearLayout
+        android:id="@+id/addProviderLl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Provider"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <Button
+                android:id="@+id/providerBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_35"
+                android:layout_weight=".5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dim_5"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Provider"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/addProviderBtn"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_weight=".5"
+
+                android:background="@color/brown_theme"
+                android:padding="@dimen/dim_5"
+                android:text="Add Provider"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_text" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_5"
+        android:gravity="left"
+        android:padding="@dimen/dim_10"
+
+        android:text="Note"
+        android:textColor="@color/green"
+        android:textSize="@dimen/dim_16" />
+
+    <EditText
+        android:id="@+id/notesEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim_80"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:background="@drawable/rounded_bg_symtoms"
+
+        android:imeOptions="actionDone"
+        android:gravity="start"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="@dimen/dim_5"
+        android:textColor="@color/gray_text" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_15"
+        android:background="@color/brown_theme"
+        android:padding="@dimen/dim_5"
+
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/exportToCalBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dim_15"
+        android:background="@color/brown_theme"
+        android:padding="@dimen/dim_5"
+
+        android:text="Export to Device Calendar"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>

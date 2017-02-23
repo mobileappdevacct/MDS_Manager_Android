@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+    <LinearLayout
+        android:id="@+id/top_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_light"
+        android:padding="@dimen/dim_5"
+        android:weightSum="10"
+        android:layout_below="@+id/tool_bar">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:text="Score"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="3.2"
+            android:gravity="center"
+            android:text="Notes"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_13" />
+        <ImageView
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_delete"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_10"
+            android:visibility="invisible"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addcontactBtn"
+        android:layout_below="@+id/top_row" />
+    <Button
+        android:id="@+id/addcontactBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_15"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:padding="@dimen/dim_5"
+        android:text="Add Score"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</RelativeLayout>

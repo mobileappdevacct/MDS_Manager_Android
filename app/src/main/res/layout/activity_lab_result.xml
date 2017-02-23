@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/toolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/addDiagnosisBtn">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:padding="@dimen/dim_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:text="Blood Counts &amp; Diagnostic Test"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_16" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dim_10"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/showHideDiagnosisImgBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="@dimen/dim_5"
+                    android:visibility="invisible"
+                    android:src="@mipmap/icn_arrow_down_aboutlabel" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/diagnosis_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/diagnosisInnerll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_light"
+                android:paddingBottom="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_5"
+
+                android:paddingRight="@dimen/dim_15"
+                android:paddingTop="@dimen/dim_5"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Diagnosis Test"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="Normal Result"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="3.2"
+                    android:gravity="center"
+
+                    android:text="My Result"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dim_13" />
+                <ImageView
+                    android:id="@+id/delete_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@mipmap/btn_delete"
+                    android:visibility="invisible"
+                    android:paddingLeft="@dimen/dim_10"
+                    android:paddingRight="@dimen/dim_10"
+
+                    />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/diagnosisListView"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_400"
+
+                />
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/addDiagnosisBtn"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dim_16"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:text="Add Lab Result"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dim_16" />
+</RelativeLayout>

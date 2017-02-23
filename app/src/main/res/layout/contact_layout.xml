@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fill_form"
+        android:layout_margin="@dimen/dim_10"
+        ></WebView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fill_form"
+        android:layout_margin="@dimen/dim_18"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:gravity="center_vertical"
+                android:text="PHONE WITHIN THE US:"
+
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_18" />
+
+            <TextView
+                android:id="@+id/phone_within_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_10"
+                android:autoLink="phone"
+                android:gravity="center_vertical"
+                android:text="1-800-MDS-0839"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_15" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_18"
+                android:gravity="center_vertical"
+                android:text="OUTSIDE THE US ONLY:"
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_18" />
+
+            <TextView
+                android:id="@+id/outside_the_us_only"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_10"
+
+                android:autoLink="phone"
+                android:gravity="center_vertical"
+                android:text="1-609-298-1035"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_15" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_18"
+                android:gravity="center_vertical"
+                android:text="FAX:"
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_18" />
+
+            <TextView
+                android:id="@+id/fax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_10"
+                android:autoLink="phone"
+                android:gravity="center_vertical"
+
+                android:text="1-609-298-0590"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_15" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_18"
+                android:gravity="center_vertical"
+                android:text="E-MAIL:"
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_18" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_10"
+                android:autoLink="email"
+
+                android:gravity="center_vertical"
+                android:text="patientliaison@mds-foundation.org"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_15" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_18"
+                android:gravity="center_vertical"
+                android:text="or write:"
+                android:textColor="#000000"
+                android:textSize="@dimen/dim_15" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginTop="@dimen/dim_18"
+                android:gravity="center_vertical"
+                android:text="THE MDS FOUNDATION, INC.
+4573 SOUTH BROAD STREET
+SUITE 150
+YARDVILLE, NJ 08620"
+                android:textColor="#0c4f8f"
+                android:textSize="@dimen/dim_18" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/fill_form"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim_45"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dim_10"
+        android:background="@mipmap/btn_add_diagnosis"
+        android:text="Send us a message"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dim_15" />
+</RelativeLayout>

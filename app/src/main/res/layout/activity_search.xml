@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+    <EditText
+        android:id="@+id/searchEdt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@drawable/rounded_bg_search"
+        android:drawableLeft="@mipmap/icon_search"
+        android:drawablePadding="@dimen/dim_10"
+        android:hint="Search"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/dim_10"
+        android:singleLine="true"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/dim_18" />
+    <Spinner
+        android:id="@+id/menuSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim_10"
+        android:layout_marginRight="@dimen/dim_10"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@drawable/spinner_shape"
+        android:singleLine="true"
+        android:spinnerMode="dropdown" />
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_10"
+        android:background="@color/black_light"
+        android:padding="@dimen/dim_10"
+        android:visibility="gone"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Date"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_14" />
+        <TextView
+            android:id="@+id/symptomTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Symptom"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_14" />
+        <TextView
+            android:id="@+id/severityTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Severity"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dim_14" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/searchedListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="menu_bg">#dcd3ce</color>
+    <color name="text_about">#308373</color>
+    <color name="text_medical">#863620</color>
+    <color name="brown_theme">#803927</color>
+    <color name="green">#3e8272</color>
+    <color name="black_light">#4e4e4e</color>
+    <color name="gray_text">#656565</color>
+    <color name="spinner_text_color">#ddd3c9</color>
+    <color name="black_transparent">#55000000</color>
+    <color name="red">#e90004</color>
+    <color name="background">#d9d9d9</color>
+    <color name="blue_purple">#1e3687</color>
+    <color name="orange">#713c32</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+</resources>

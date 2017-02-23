@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar">
+
+        </include>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_weight=".4"
+                android:text="Diagnostic Test *"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/diagnosisBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/dim_5"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_weight=".4"
+                android:text="Date *"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/DateBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/dim_5"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:paddingBottom="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_weight=".4"
+                android:text="Results Value"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/resultsEdt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/dim_5"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:paddingBottom="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_weight=".4"
+                android:text="Results Units"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dim_30"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/unitBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_bg_symtoms"
+                    android:imeOptions="actionNext"
+                    android:padding="@dimen/dim_5"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_text" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@mipmap/img_seperater" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dim_10"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:text="Notes"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_16" />
+
+            <EditText
+                android:id="@+id/notesEdt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_70"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_5"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionDone"
+                android:padding="@dimen/dim_5"
+                android:gravity="start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+
+            android:background="@mipmap/img_seperater" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dim_10"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginRight="@dimen/dim_10"
+                android:text="Load test results file or take pictures of the report"
+                android:textColor="@color/green"
+                android:textSize="@dimen/dim_12" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dim_5"
+                        android:layout_toLeftOf="@+id/addImageImgBtn">
+
+                        <LinearLayout
+                            android:id="@+id/inflate_image_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <ImageButton
+                        android:id="@+id/addImageImgBtn"
+                        android:layout_width="@dimen/dim_60"
+                        android:layout_height="@dimen/dim_60"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dim_10"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/btn_add_documents" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/addImageBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_35"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:layout_marginLeft="@dimen/dim_70"
+                android:layout_marginRight="@dimen/dim_70"
+                android:layout_marginTop="@dimen/dim_15"
+                android:layout_weight="1"
+                android:background="@mipmap/btn_add_image"
+                android:text="Add Image"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_16" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/saveBtn"
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim_35"
+                android:layout_marginBottom="@dimen/dim_10"
+                android:layout_marginLeft="@dimen/dim_70"
+                android:layout_marginRight="@dimen/dim_70"
+                android:layout_marginTop="@dimen/dim_10"
+                android:background="@mipmap/btn_add_image"
+
+                android:text="Save"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dim_16" />
+
+            <!--<Button-->
+            <!--android:id="@+id/saveAndbackBtn"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="@dimen/dim_40"-->
+            <!--android:layout_marginLeft="@dimen/dim_10"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@mipmap/btn_add_image"-->
+
+            <!--android:text="Save &amp; Back"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/dim_16" />-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

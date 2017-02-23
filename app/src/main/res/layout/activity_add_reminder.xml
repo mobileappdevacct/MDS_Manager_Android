@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dim_10">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:padding="@dimen/dim_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dim_10"
+                android:text="REMINDER"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/dim_16" />
+
+            <Switch
+                android:id="@+id/reminderSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dim_10" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dim_15"
+            android:text="SCHEDULE"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/scheduleBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_40"
+            android:layout_marginTop="@dimen/dim_5"
+            android:background="@drawable/symptom_spinner_bg"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+
+
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_16" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dim_15"
+            android:text="FREQUENCY / INTERVALS"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/frequencyBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_40"
+            android:layout_marginTop="@dimen/dim_5"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:textColor="#fff"
+            android:textSize="@dimen/dim_16" />
+
+        <Button
+            android:id="@+id/soundBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim_40"
+            android:layout_marginTop="@dimen/dim_10"
+            android:background="@drawable/symptom_spinner_bg"
+            android:gravity="center"
+            android:padding="@dimen/dim_10"
+            android:text="Reminder Sound"
+
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dim_15"
+            android:text="REMINDERS"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/dim_16" />
+
+        <RelativeLayout
+            android:id="@+id/reminderContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bg_remider">
+
+            <RelativeLayout
+                android:id="@+id/startContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <TextView
+                    android:id="@+id/timeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dim_15"
+                    android:textColor="#000"
+                    android:textSize="@dimen/dim_16"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginLeft="@dimen/dim_10"
+                    android:layout_marginTop="@dimen/dim_5"
+                    android:textColor="@color/gray_text"
+                    android:textSize="@dimen/dim_16" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/startTimeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/dim_10"
+                        android:text="Start Time"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/dim_16" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dim_10"
+                        android:src="@mipmap/icn_arrow" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/timeListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/startContainer"
+                android:paddingBottom="@dimen/dim_5"
+                android:paddingLeft="@dimen/dim_5"
+                android:layout_marginTop="@dimen/dim_4"
+                android:paddingRight="@dimen/dim_5"></ListView>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

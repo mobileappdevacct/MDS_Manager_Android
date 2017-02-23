@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"></include>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Provider Name *"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+        <EditText
+            android:id="@+id/providerNameEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Provider Specialty"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/providerSpecialityEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dim_5"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Referred By"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/referredByEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:inputType="textCapSentences"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Address"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/addressEdt"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim_80"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionNext"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Phone"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/honeTxt"
+                android:layout_width="@dimen/dim_70"
+                android:layout_height="@dimen/dim_30"
+                android:background="@mipmap/box_dropdown_sm"
+                android:gravity="center"
+                android:text="+1"
+                android:textColor="#000000"
+                android:textSize="@dimen/dim_16"></TextView>
+
+            <EditText
+                android:id="@+id/phoneNameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dim_4"
+                android:background="@drawable/rounded_bg_symtoms"
+                android:imeOptions="actionNext"
+                android:padding="@dimen/dim_5"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Fax"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/faxNameEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionNext"
+            android:maxLength="11"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dim_10"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="Email"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_16" />
+
+        <EditText
+            android:id="@+id/emailNameEdt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_bg_symtoms"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/dim_5"
+            android:singleLine="true"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addExportLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_add_diagnosis"
+            android:padding="@dimen/dim_5"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exportContact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim_5"
+            android:layout_weight="1"
+            android:background="@mipmap/btn_add_diagnosis"
+            android:text="Export Contact"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
